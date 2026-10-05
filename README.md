@@ -6,18 +6,14 @@ This repository contains the code for the paper: **LARES: Targeted Lateral Movem
 [`colab/LARES_artifact.ipynb`](colab/LARES_artifact.ipynb) reproduces the paper's main
 results end to end on a free Colab runtime. Open it with **File → Upload notebook** in
 [Google Colab](https://colab.research.google.com/), or through **File → Open notebook →
-GitHub**, set `DATASET_URL` in section 1 to a Google Drive link of
-`lanl_optc_datasets_compiled.tar.gz` (0.6 GB, sha256
-`a0b9cd2c95557061ffbc66daaad9b8a88f8820c1ac38a6127474bc57f7756981`), then
-**Runtime → Run all**.
+GitHub → Runtime → Run all**.
 
 The notebook clones this repository with its released weights, downloads the compiled
 graph snapshots, evaluates from the weights, and prints the reproduced numbers next to
 the published ones (Table II, Table VII, Figure 2, and the *Detection* row of Table III).
 About an hour on a CPU runtime; no GPU required. Interrupted sessions can be resumed by
 running all cells again: finished steps are detected and skipped. Pointing `DATASET_URL`
-at the raw 14.35 GB dataset also works; the notebook then compiles the snapshots itself,
-which takes several hours.
+at the raw 14.35 GB dataset also works; the notebook then compiles the snapshots itself.
 
 ## Installation
 

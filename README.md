@@ -9,7 +9,8 @@ results end to end on a free Colab runtime. Open it with **File → Upload noteb
 GitHub → Runtime → Run all**.
 
 The notebook clones this repository with its released weights, downloads the compiled
-graph snapshots, evaluates from the weights, and prints the reproduced numbers next to
+graph snapshots from Zenodo ([10.5281/zenodo.23171473](https://doi.org/10.5281/zenodo.23171473)),
+evaluates from the weights, and prints the reproduced numbers next to
 the published ones (Table II, Table VII, Figure 2, and the *Detection* row of Table III).
 About an hour on a CPU runtime; no GPU required. Interrupted sessions can be resumed by
 running all cells again: finished steps are detected and skipped. Pointing `DATASET_URL`
@@ -79,7 +80,8 @@ intrusion and lateral movement detection.
 
 > Google Drive throttles files that were downloaded heavily in the past 24 hours. The
 > Colab notebook does not depend on this archive: it downloads the much smaller compiled
-> snapshots instead (see [Quick start on Google Colab](#quick-start-on-google-colab)).
+> snapshots from Zenodo instead, which has no download quota (see
+> [Quick start on Google Colab](#quick-start-on-google-colab)).
 
 ### Compile datasets
 
